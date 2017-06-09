@@ -20,7 +20,10 @@ gem 'puma', '~> 3.7'
 gem 'bcrypt', '~> 3.1.7'
 # JSON Web Tokens
 gem 'jwt'
+gem 'active_model_serializers', '~> 0.10'
+gem 'will_paginate', '~> 3.1'
 
+gem 'faker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -43,7 +46,6 @@ end
 group :test do
   gem 'factory_girl_rails', '~> 4.8'
   gem 'shoulda-matchers', '~> 3.0'
-  gem 'faker'
   gem 'database_cleaner'
 end
 

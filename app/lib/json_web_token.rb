@@ -1,4 +1,4 @@
-require_relative './concerns/exception_handler'
+
 class JsonWebToken
 
   HMAC_SECRET = Rails.application.secrets.secret_key_base
@@ -15,3 +15,4 @@ class JsonWebToken
     raise ExceptionHandler::InvalidToken, e.message
   end
 end
+
